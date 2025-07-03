@@ -28,7 +28,7 @@
   /* Fonts do projeto */
   --fonte-principal: 'Marcellus', serif;
   --fonte-corpo: 'Jost', sans-serif;
-  
+
   --font-size-h1: 48px;
   --font-size-h2: 40px;
   --font-size-h3: 32px;
@@ -38,15 +38,16 @@
 
   --font-size-button-large: 16px;
   --font-size-button: 14px;
-  
+
   --font-size-card: 14px;
   --font-size-card-price: 14px;
-  
+
   --font-size-body-large: 16px;
   --font-size-body-normal: 14px;
-  
+
   --font-size-extra: 18px;
-  
+
+  --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
   --line-height-base: 1.5;
@@ -58,12 +59,15 @@ body {
   align-items: center;
   justify-content: center;
   font-family: var(--fonte-corpo);
+  font-weight: 300
+    /* var( --font-weight-regular); */
+
 }
 
 
 #container {
   width: 1024px;
-  border: 1px solid black;
+  border: 1px solid var(--background-color-secundaria);
   background-color: var(--background-color-primaria);
 
 }
@@ -71,19 +75,19 @@ body {
 header {
   width: 100%;
   height: 200px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--background-color-secundaria);
 }
 
 nav {
   width: 100%;
   height: 50px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--background-color-secundaria);
 }
 
 main {
   width: 100%;
   height: 300px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--background-color-secundaria);
 }
 
 footer {
@@ -94,10 +98,57 @@ footer {
 #infos {
   width: 100%;
   height: 160px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--background-color-secundaria);
 }
 
 #infos-credit-card {
-  width: 100%;
-  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#infos-credit-card .container1 {
+  display: flex;
+  align-items: center;
+    gap: 15px;
+}
+
+#infos-credit-card .container2 {
+  display: flex;
+  align-items: center;
+}
+
+#infos-credit-card .infos-footer2 {
+  display: flex;
+  align-items: center;
+}
+
+#infos-credit-card p {
+  font-size: 14px;
+  color: var(--font-color-black);
+}
+
+#infos-credit-card i {
+  font-size: 14px;
+  color: var(--font-color-cinza);
+  margin: 0 4px 0 4px;
+  position: relative;
+  top: 1px;
+
+}
+
+#infos-credit-card .fa-fedex {
+  font-size: 25px;
+}
+
+#infos-credit-card .fa-dhl {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+
+}
+
+#infos-credit-card span {
+  font-weight: 500;
+  color: var(--font-color-black);
 }
